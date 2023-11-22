@@ -3,6 +3,7 @@ package org.example;
 import java.util.Scanner;
 public class Main {
     public static boolean isPalindrome(String str) {
+        if(str == null) return false;
         String s = str.replaceAll("\\s+", "").toLowerCase();
         return s.contentEquals(new StringBuilder(s).reverse());
     }
