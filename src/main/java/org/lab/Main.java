@@ -1,9 +1,9 @@
-package org.example;
+package org.lab;
 
 import java.util.Scanner;
 public class Main {
     public static boolean isPalindrome(String str) {
-        if(str == null) return false;
+        if(str == null || str.isEmpty()|| str.length() == 1 ) return true;
         String s = str.replaceAll("\\s+", "").toLowerCase();
         return s.contentEquals(new StringBuilder(s).reverse());
     }
